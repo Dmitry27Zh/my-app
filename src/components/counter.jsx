@@ -17,9 +17,6 @@ const Counter = (props) => {
   const handleDecrement = () => {
     setValue((prevState) => prevState - 1)
   }
-  const handleDelete = () => {
-    console.log('Delete!')
-  }
 
   return (
     <div>
@@ -31,7 +28,7 @@ const Counter = (props) => {
       <button className="btn btn-primary btn-sm m-2" onClick={handleDecrement}>
         -
       </button>
-      <button className="btn btn-danger btn-sm m-2" type="button" onClick={handleDelete}>
+      <button className="btn btn-danger btn-sm m-2" type="button" onClick={props.onDelete}>
         Delete
       </button>
     </div>
