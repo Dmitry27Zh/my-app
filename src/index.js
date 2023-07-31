@@ -1,9 +1,6 @@
-import reactDom from 'react-dom'
+import reactDom from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.css'
-import Counter from './components/counter'
+import App from './app'
 
-const App = () => {
-  return <Counter></Counter>
-}
-
-reactDom.render(<App></App>, document.getElementById('root'))
+const root = reactDom.createRoot(document.getElementById('root'))
+root.render(<App></App>)
