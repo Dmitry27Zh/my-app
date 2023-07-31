@@ -1,7 +1,7 @@
-import Counter from './components/counter'
+import CounterList from './components/counterList'
 
 const App = () => {
-  return <Counter></Counter>
+  return <CounterList></CounterList>
 }
 
 export default App
