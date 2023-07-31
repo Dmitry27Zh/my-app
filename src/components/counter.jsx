@@ -20,6 +20,7 @@ const Counter = (props) => {
 
   return (
     <div>
+      {props.children}
       <span className={getBageClasses()}>{formatCount()}</span>
       <button className="btn btn-primary btn-sm m-2" onClick={handleIncrement}>
         +
