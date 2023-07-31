@@ -11,9 +11,7 @@ const CounterList = () => {
   return (
     <div>
       {counters.map((count) => (
-        <Counter key={count.id} value={count.value}>
-          <h1>{count.name}</h1>
-        </Counter>
+        <Counter key={count.id} value={count.value} name={count.name}></Counter>
       ))}
     </div>
   )
